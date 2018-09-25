@@ -1,13 +1,16 @@
 {
   "name": "bthub",
   "version": "0.0.0",
+  "main": "main.js",
   "scripts": {
+    "start": "ng build && electron .",
+    "deploy": "ng build --prod && electron .",
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ngstart": "ng serve",
+    "ngbuild": "ng build",
+    "ngtest": "ng test",
+    "nglint": "ng lint",
+    "nge2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +36,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.3.0",
+    "electron": "^3.0.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.0.0",
